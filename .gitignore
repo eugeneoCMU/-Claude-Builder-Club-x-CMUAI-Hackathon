@@ -1,0 +1,45 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+
+# env files (keep these secret)
+.env
+.env.local
+.env.*.local
+
+# build output
+dist/
+build/
+*.tsbuildinfo
+
+# database (SQLite)
+kintsugi.db
+kintsugi.db-journal
+kintsugi.db-shm
+kintsugi.db-wal
+*.sqlite
+*.sqlite-journal
+
+# generated shard images (regenerated from entries)
+public/shards/
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# editors / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# legacy Next.js build output (in case someone restores and runs the old app)
+legacy/.next/
+legacy/next-env.d.ts
+legacy/out/

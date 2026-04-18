@@ -1,0 +1,76 @@
+:root {
+  --bg: #0a0908;
+  --bg-soft: #141210;
+  --ink: #efe8dc;
+  --ink-muted: #a79f8f;
+  --gold: #d4af37;
+  --gold-bright: #f4e5a1;
+  --gold-deep: #8a6b17;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.serif {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.72;
+    filter: drop-shadow(0 0 2px var(--gold)) drop-shadow(0 0 6px var(--gold-deep));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 4px var(--gold-bright)) drop-shadow(0 0 14px var(--gold));
+  }
+}
+
+@keyframes tileBreathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
