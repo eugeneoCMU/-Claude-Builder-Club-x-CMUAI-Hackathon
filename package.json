@@ -15,8 +15,7 @@
     "build:server": "tsc -p tsconfig.server.json",
     "build": "npm run build:server && npm run build:client",
     "start": "node dist/server/server.js",
-    "typecheck": "tsc --noEmit",
-    "seed": "tsx src/scripts/seedFromCsv.ts"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",
