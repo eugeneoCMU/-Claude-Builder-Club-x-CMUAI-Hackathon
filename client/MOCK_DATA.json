@@ -1,0 +1,98 @@
+{
+  "shards": [
+    {
+      "id": "mock-001",
+      "row_index": 2,
+      "regret": "I didn't call my grandmother back the week she died.",
+      "proud": "I sat in my car for an hour and cried when my brother texted 'I started therapy.'",
+      "dream": "I keep starting a letter to my father. I've written the first line maybe fifty times.",
+      "image_url": null,
+      "image_prompt": null,
+      "shape_seed": 2148394215,
+      "position_x": 0.3,
+      "position_y": 0.3,
+      "rotation": -0.12,
+      "scale": 1.0,
+      "status": "processing",
+      "created_at": 1734480000000,
+      "layer_order": 1
+    },
+    {
+      "id": "mock-002",
+      "row_index": 3,
+      "regret": "I quit music when someone I respected said I wasn't good enough.",
+      "proud": "I taught myself my mother's khao soi. My daughter said 'this tastes like grandma.'",
+      "dream": "To write the stories my mother never told me. I have fragments. I want to put them in order.",
+      "image_url": null,
+      "image_prompt": null,
+      "shape_seed": 983214781,
+      "position_x": 0.7,
+      "position_y": 0.3,
+      "rotation": 0.08,
+      "scale": 0.95,
+      "status": "processing",
+      "created_at": 1734480002000,
+      "layer_order": 2
+    },
+    {
+      "id": "mock-003",
+      "row_index": 4,
+      "regret": "I stayed in a job that was killing something in me for four years.",
+      "proud": "I walked away from a relationship that was quietly shrinking me.",
+      "dream": "I want to open a small bookshop that only sells books I've actually read.",
+      "image_url": null,
+      "image_prompt": null,
+      "shape_seed": 3214782001,
+      "position_x": 0.3,
+      "position_y": 0.7,
+      "rotation": -0.05,
+      "scale": 1.05,
+      "status": "processing",
+      "created_at": 1734480004000,
+      "layer_order": 3
+    },
+    {
+      "id": "mock-004",
+      "row_index": 5,
+      "regret": "I wasn't there the night my best friend called me.",
+      "proud": "I finished my master's after my dad stopped believing I would.",
+      "dream": "To learn to be the kind of friend I was supposed to be that night.",
+      "image_url": null,
+      "image_prompt": null,
+      "shape_seed": 1871230945,
+      "position_x": 0.7,
+      "position_y": 0.7,
+      "rotation": 0.14,
+      "scale": 0.98,
+      "status": "processing",
+      "created_at": 1734480006000,
+      "layer_order": 4
+    }
+  ],
+  "connections": [
+    {
+      "id": "mock-conn-001",
+      "shard_a_id": "mock-001",
+      "shard_b_id": "mock-002",
+      "phrase": "a letter kept open for the dead",
+      "theme": "unfinished grief",
+      "created_at": 1734480003000
+    },
+    {
+      "id": "mock-conn-002",
+      "shard_a_id": "mock-002",
+      "shard_b_id": "mock-003",
+      "phrase": "a small shop of things we chose",
+      "theme": "quiet reclamation",
+      "created_at": 1734480005000
+    },
+    {
+      "id": "mock-conn-003",
+      "shard_a_id": "mock-003",
+      "shard_b_id": "mock-004",
+      "phrase": "walking out of rooms that were shrinking us",
+      "theme": "departure as repair",
+      "created_at": 1734480007000
+    }
+  ]
+}

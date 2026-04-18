@@ -1,0 +1,45 @@
+{
+  "name": "kintsugi-network",
+  "version": "0.1.0",
+  "description": "An interactive art installation that transforms reflections on regret, pride, and unfinished dreams into a living kintsugi mosaic.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "scripts": {
+    "dev": "concurrently -n server,client -c yellow,cyan \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "tsx watch src/server.ts",
+    "dev:client": "vite",
+    "build:client": "vite build",
+    "build:server": "tsc -p tsconfig.server.json",
+    "build": "npm run build:server && npm run build:client",
+    "start": "node dist/server/server.js",
+    "typecheck": "tsc --noEmit",
+    "seed": "tsx src/scripts/seedFromCsv.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
+    "better-sqlite3": "^11.7.0",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0",
+    "p-queue": "^8.0.1",
+    "sharp": "^0.33.5",
+    "uuid": "^11.0.3",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "@types/ws": "^8.5.13",
+    "concurrently": "^9.1.0",
+    "pixi-filters": "^6.1.1",
+    "pixi.js": "^8.6.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}
